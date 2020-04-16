@@ -1,14 +1,18 @@
 /* TODO: float left to right */
 
-* {
+/* * {
   outline: 1px dotted red;
-}
+} */
 
 /* ================ HEADER ================ */
 
 /* When you are having issues with float, you must fix problems at the root level. Setting the height/width of the parent typically resolves these issues */
 header {
+  width: 1050px;
   height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(80, 80, 80);
 }
 
 /* Automatically sets left and right margins to center the element */
@@ -16,6 +20,7 @@ nav {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+  color: darkgray;
 }
 
 /* Gets any img in a nav and applies these settings */
@@ -30,10 +35,11 @@ nav img {
 /* Sets margins of the element within the nav bar */
 nav ul li {
   float: left;
-  /* padding: 15px; */
   margin-top: 42px;
   margin-right: 104px;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   /* tells MBP's border and padding to fit inside the width (subtract from the width) */
 }
 
@@ -42,6 +48,7 @@ nav ul li {
 main {
   /* NOTE ON WIDTH: The 'auto' margin is only set based on the width of the element. You need to specify a width (not 100%) before you set a margin, otherwise no margin will be set. */
   margin-top: 30px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 960px;
@@ -99,3 +106,10 @@ button:hover {
 /* RULE FOR FLOATS: float the child, overflow hidden the parent */
 
 /* ================ FOOTER ================ */
+footer {
+  width: 1050px;
+  min-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(80, 80, 80);
+}
